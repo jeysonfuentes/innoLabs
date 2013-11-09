@@ -190,3 +190,59 @@ p.index
 
 .right {float:right;}
 
+.vista {
+    width: 160px;
+    height: 160px;
+    margin: 9px;
+    float: left;
+    border: 5px solid #D1DDE9;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.vista .mascara, .vista .contenido {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.vista .imgtrans {
+    display: block;
+    position: relative;
+}
+
+.vista .imgtrans {
+    -webkit-transition: all 0.3s ease-in-out; 
+    -moz-transition: all 0.3s ease-in-out; 
+    -o-transition: all 0.3s ease-in-out; 
+    -ms-transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out; 
+}
+.vista .mascara {
+    opacity: 1;
+    background-color: hsla(216, 72%, 53%, 0.3);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 0.4s ease-in-out; 
+    -o-transition: all 0.4s ease-in-out; 
+    -ms-transition: all 0.4s ease-in-out; 
+    transition: all 0.4s ease-in-out; 
+}
+
+.vista .mascara img {
+	display: block;
+    position: static;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 110px;
+    height: 110px;
+}
